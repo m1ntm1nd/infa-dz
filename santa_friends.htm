@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="images/slider.js"></script>
+<link rel="stylesheet" href="images/style_slider.css">
+
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-text {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-image {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+
+.button {
+  margin: 0px 100px;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-text,
+  .column-image {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+
+
+.navbar {
+  //overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:150 px;
+  background: rgba(0, 0, 128, 0.8); /* Black background with 0.5 opacity */
+  z-index:7;
+  text-shadow: 10px 10px 20px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+p{
+text-align: justify;
+font-size: 1 em;
+line-height: 1.5em;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+h1{
+text-align: center;
+font-size: 1.5 em;
+color:blue;
+
+}
+
+img{
+ 
+ -webkit-filter: drop-shadow(5px 5px 5px #4682B4);
+  filter: drop-shadow(5px 5px 5px #4682B4);
+}
+
+
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
+.active {
+  background-color: #E68352 !important;
+}
+
+.button {
+  background-color: green;
+}
+
+
+footer {
+    height: 100px;
+    bottom:0;
+  //  position:fixed;
+    width:100%;
+    background: url('images/santa_grid.png') repeat-x;
+}
+
+</style>
+
+
+<script>
+
+
+
+
+ function myFunction( k ) {
+
+  var btnText1 = document.getElementById("button1");
+  var btnText2 = document.getElementById("button2");
+  var btnText3 = document.getElementById("button3");
+
+  var dots1 = document.getElementById("dots1");
+  var dots2 = document.getElementById("dots2");
+var dots3 = document.getElementById("dots3");
+
+ var more1 = document.getElementById("more1");
+  var more2 = document.getElementById("more2");
+  var more3 = document.getElementById("more3");
+
+ var buttons = [btnText1, btnText2, btnText3];  
+ var dots = [dots1, dots2, dots3];  
+ var moreText=[more1,more2, more3];
+
+  if (dots[k].style.display === "none") {
+    dots[k].style.display = "inline";
+    buttons[k].innerHTML = "Read more";
+    moreText[k].style.display = "none";
+  } else {
+    dots[k].style.display = "none";
+    buttons[k].innerHTML = "Read less";
+    moreText[k].style.display = "inline";
+  }
+} 
+ 
+
+</script>
+
+
+</head>
+<body>
+
+<header>
+
+<img src="images/friends_banner.png" alt="Santa Friends" id="logo" width=100%/>
+
+<div class="navbar">
+  <a href="main.htm">Home</a>
+  <a href="santa.htm">History</a>
+  <a href="santa_friends.htm">Friends</a>
+  <a href="contact.html">Contact</a>
+  <a href="snowman.html">Snowman</a>
+</div>
+
+
+<ul id="slides">
+	<li class="slide showing"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+</ul>
+
+
+</header>
+
+
+
+<!-- Rudolph Section -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="column-text">
+
+
+      <h1 class="large-font" style="color:red;"><b>Rudolph the Red-Nosed Reindeer </b></h1>
+
+   <p>
+
+� ������������ �� ������� ���������� �������� ������� ���, ����������� ����� ������� �������� ������� � ������� ����� �����-������, 
+������� ����� �� ������� ���� � �������������� ���� ������ �������� ������. 
+��� ��������, ������� ������� ������ ��������� �������� �� ������� ������ ������, �������� ���, �������� ������, �������� ���� �����-������.
+��������� ������ (Nathaniel Dominy) �� ������������ �������� � ��������� (���) ����� ������ ������� �������������� ����� �������� �������� 
+� ������ ���� � ������� ����� ������, ������ �� ����������� � �������� � ����� �������� ������, ������� ����� �������� ������ ������ �������.
+<span id="dots1">...</span><span id="more1">
+� �������, � ������� 2013 ���� ������ ��������, ��� ���� ���� �������� ������ �������� ������ � �������� ����, ��������� ������� �� ����� ����, 
+� ������ �� ����� ����. ��������� ����� ����� �������, ������� ���������� ��-�� "������������" �������� ��������, ��� ����������� ��������, 
+����� ����������� ����� ����������� ������ ������������, � ���������������� ��� ���� � ������ ����� ������� ��������� �� ���� �������� � �������� ������.
+��� ������� ������, ��� ������ ��������, ��� ������� � ��� �������� �� ������� �� �������� ����� ���������, ������� ������ �������� �� ��������������� 
+� ������ �������������� ���� �� ����� ������������� ������ �����-������. 
+
+</span></p>
+
+      <button class="button" style="background-color:red" onclick="myFunction(0)" id="button1" >Read More</button>
+</p>
+    </div>
+    <div class="column-image">
+        <img src="images/santa_rudolph.png" width=100% height=auto>
+    </div>
+  </div>
+</div>
+
+<!-- Snowman Section -->
+
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+
+    <div class="column-image">
+
+      <img src="images/ded4.png" alt="App" width=100% height=auto>
+    </div>
+
+    <div class="column-text">
+
+      
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Snowman</b></h1>
+
+<p>
+ 18 ������ �������� ���� ���������.  ���������������� � ����� XV ����, ���-�� � 1493 ����, ����������� ��������� � ����������, 
+� ��� ���� �� ����� ������������ ����������, ������� � ���� ������ ������� ������. 
+� �� �� ����� ��������� ��������� ����������, ��� �������� ��� �������� ������ ���������� ���������. 
+���� ����� �schneemann�, ��� �������� ������� �������, ��������� �������������, � �snowman� - �����������.
+� ������ �������� ������ ����� ����� ����, ��� ����� �������� ����������, �������� ������� � ��������� � ����, 
+� ���� ������� ��������� �����. ��� ������ ������� ��������� ����� ����������� ��������. <span id="dots2">...</span><span id="more2">
+���, ��� � ���� �������� ������������ ���������, ����� ������������ �����, ������� �������� ������ � ����������. 
+������������ �����, ������������� �� ������ ��������������� ��������. 
+� ������� ���������� �������� ������ �� �������, ��� �������������� �������� ���� ������ ����� � ��������� �� �� ������ �������� ����.
+</span>
+</p>
+     <button class="button" onclick="myFunction(1)"  id="button2" >Read More</button>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Elf Section -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="column-text">
+
+
+
+      <h1 class="large-font" style="color:red;"><b>The Elf on the Shelf</b></h1>
+
+<p>
+� ����������� ������, ������, �������������� � �������� ����������� ������� � �����-������ ������ �������� ����������� ������ �� ���������. 
+������ � ������� ����� � ������� ����� � �������������� ������� � �������� ���������� �����. 
+��� ������ ������� � ���������� �����, ������������� �� �������� ������. 
+��� ����, ����� �������� ����� �������, ����� ����� ������ ���� ������ � ���, ��� ����� ��� ���� ������. � ��� �� ���� ������? 
+�������� ���� ������������ ������ � ���� ��������� ������� ������ �� ����� ����������-������ (scout elves) ���������� �� ��������� � ����, 
+� �����, ����� ��� ����� �����, ��������� � ��������. <span id="dots3">...</span><span id="more3">
+������������ ����� � ����� ��� ���� ������������ � ������������ � ��������� �������� �the elf on the shelf�.  ���� �the elf on the shelf� ������.
+���� ������ ���������� � ���� � ������� Scout Elf Return Week (�������� � ���������� ����� 24 ������ � 1 �������).
+������ ���� ���� ��� ���� ������ ����� �� ����� �����. ���� ����������� ������ ���� � ���������� ���, ����� �������, ��� ����� �������� ����.
+������ ���� ���� ������� �� �������� �����, ����� ���������� �����-������, ���� �� ���� ���������� ��� ���. 
+��� ����� ������ ��������� ��� �����. ������� �������, �������� ����� ���������: ���� �� ����� ������� �����. 
+� ���� ����� ���������� ���� ������� � ��������� ��� �� ���������� ����.
+
+</p>
+      <button class="button" style="background-color:red" onclick="myFunction(2)" id="button3">Read more</button>
+    </div>
+    <div class="column-image">
+        <img src="images/helper.png" width=100% height=auto >
+    </div>
+  </div>
+</div>
+
+ <footer>
+
+
+
+
+
+   </footer>
+
+</body>
+</html>

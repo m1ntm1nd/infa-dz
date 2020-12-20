@@ -1,0 +1,275 @@
+
+
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+margin:0;
+background: linear-gradient(90deg, MidnightBlue 0%, LightSkyBlue 25%, white 50%, LightSkyBlue 75%, MidnightBlue 100%);
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:50 px;
+  background: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
+  z-index:7;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 15px;
+  margin-left: 15%;
+  margin-top: 25%;
+
+}
+
+
+
+article, aside
+
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+   
+}
+
+
+article
+
+{
+background-color: rgba(255, 255, 255, 0.7);
+
+    box-shadow: 0 0 10px rgba(25,25,112,0.5); /* ��������� ���� */
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 5%;
+    z-index:-2;
+}
+
+
+
+aside {
+    position: relative;
+    width: 40%;
+    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    float: right;
+//    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  //  width: 235px;
+      width: 25%;
+    background-color: #87CEEB;
+
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+
+//    padding: 10px;
+
+    color: white;
+    font-size: 0.9em;
+    z-index:1; 
+}
+
+aside > p {
+    margin: 1.5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    line-height: 1.9em;
+    color: MidnightBlue;
+    margin-right: 5%;
+    margin-left: 5%
+}
+
+
+#santa_picture
+
+{
+
+    text-align: center;
+
+}
+
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+width:100%
+}
+
+.imgW {
+  width: 100%;
+  height: 300px;
+//  position: relative;
+   position: absolute;
+   top:0px;
+   position: fixed;
+   z-index:5;
+}
+.imgW>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+aside img
+
+{
+
+    margin: 15px 15px;
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<header>
+<div class="navbar">
+  <a href="main.htm">Home</a>
+  <a href="santa.htm">History</a>
+  <a href="santa_friends.htm">Friends</a>
+  <a href="contact.html">Contact</a>
+  <a href="snowman.html">Snowman</a>
+
+</div>
+
+<div class="imgW">
+  <img src="images/banner.png">
+</div>
+
+
+</header>
+
+
+<div class="main">
+
+   
+  <section>
+            
+                    
+   <article>		
+                    
+               
+                <aside>
+                    <h1>Here is Snowman</h1>
+                   
+                    <script type="text/javascript">
+                        var images = new Array();
+                        var i = 0;
+                         
+                        images[0] = './images/1.jpeg';
+                        images[1] = './images/2.jpeg';
+                        images[2] = './images/3.jpg';
+                        images[3] = './images/4.jpeg';
+                        images[4] = './images/5.jpeg';
+                         
+                        function viewImages() {
+                            document.getElementById("img_main").src = images[i]; 
+                            i++;
+                            if (i == images.length) {
+                                i = 0;
+                            }
+                            setTimeout("viewImages()",2000);
+                        }   
+                    </script>
+                     
+                    <img src="" id="img_main" widht=150px height=150px />
+                     
+                    <script> viewImages(); </script>
+
+
+                                         
+                </aside>
+
+
+<p>
+		
+
+    A snowman is an anthropomorphic snow sculpture often built in regions with sufficient snowfall. 
+    In many places, typical snowmen consist of three large snowballs of different sizes with some additional accoutrements 
+    for facial and other features. Due to the sculptability of snow, there is also a wide variety of other styles.
+    Common accessories include branches for arms and a rudimentary smiley face, with a carrot used for a nose. Clothing,
+    such as a hat or scarf, may be included. Low cost and availability are the common issues, since snowmen are usually 
+    abandoned to the elements once completed.
+    Snow becomes most suitable for packing when it approaches its melting point and becomes moist and compact. 
+    Making a snowman of powdered snow is difficult since it will not stick to itself, and if the temperature of packing snow drops, 
+    it will form an unusable denser form of powdered snow called crust. Thus, a good time to build a snowman may be the next warm afternoon 
+    directly following a snowfall with a sufficient amount of snow. Using more compact snow allows for the construction of a large snowball
+    by simply rolling it until it grows to the desired size. If the snowball reaches the bottom of the grass it may pick up traces of grass, 
+    gravel or dirt.
+
+   In North America, snowmen are generally built with three spheres representing the head, torso, 
+   and lower body.[1] In the United Kingdom, two spheres are used, one sphere representing the body and one 
+   representing the head. The usual practice is to then decorate and optionally dress the snowman. Sticks can be used for arms,
+    and a face is traditionally made with stones or coal for eyes and a carrot for a nose. Some like to dress their snowmen in clothing 
+    such as a scarf or hat, while others prefer not to risk leaving supplies out doors where they could easily be stolen or become stuck under
+     melting ice.
+
+    There are variations to these standard forms; for instance, the popular song "Frosty 
+    the Snowman" describes a snowman being decorated with a corncob pipe, button nose, coal eyes and 
+    an old silk hat (usually depicted as a top hat). These other types range from snow columns to elaborate
+     snow sculptures similar to ice sculptures.≫
+
+
+
+ </article>
+</section>
+</div>
+
+
+            <footer>
+
+            <img src="images/footer2.png" alt=""  width=100%/>
+
+
+
+            </footer>
+        </div>
+
+
+</body>
+</html>
